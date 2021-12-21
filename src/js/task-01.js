@@ -1,12 +1,10 @@
 const ulItems = document.querySelectorAll('.item');
-console.log(`Number of categories: ${ulItems.length}`); 
+console.log(`Number of categories: ${ulItems.length}`);
 
-ulItems.forEach(element => {
-    const getTitleEl = element.querySelector('h2');
-    const getUlRefs = element.querySelectorAll('li'); 
-    console.log(`Category: ${getTitleEl.textContent}`);
-    console.log(`Elements: ${getUlRefs.length}`); 
-});
+ulItems.forEach((e) => 
+console.log('Category:', e.firstElementChild.textContent, 'Elements:', e.lastElementChild.children.length));
+
+
 
 
 

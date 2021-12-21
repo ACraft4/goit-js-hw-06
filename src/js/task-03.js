@@ -15,8 +15,6 @@ const images = [
 
 
 const galleryOfElements = document.querySelector('.gallery');
-galleryOfElements.classList.add('gallary_box')
-
 images.forEach(element => {
   galleryOfElements.insertAdjacentHTML(
     'afterbegin', 

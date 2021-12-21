@@ -18,7 +18,7 @@ for(let i = 0; i < ingredients.length; i += 1) {
   itemsElements.classList.add('item');
   itemsElements.textContent = element;
   elements.push(itemsElements);
-}
+};
 
 listOfElements.append(...elements);
 
