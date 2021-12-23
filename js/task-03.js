@@ -15,7 +15,7 @@ const images = [
 
 
 const galleryOfElements = document.querySelector('.gallery');
-images.forEach(element => {
+images.map(element => {
   galleryOfElements.insertAdjacentHTML(
     'afterbegin', 
     `<li>
