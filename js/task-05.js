@@ -1,11 +1,21 @@
-const inputEl = document.querySelector('#name-input');
-const spanEl = document.querySelector('#name-output');
+/*Напиши скрипт который, при наборе текста в инпуте 
 
-inputEl.addEventListener('input', (event) => {
-    spanEl.textContent = event.currentTarget.value;
-    if (spanEl.textContent.length === 0) {
-        spanEl.textContent = 'Anonymous'
-    };
-}); 
+input#name-input (событие input), подставляет его текущее 
+
+значение в span#name-output. Если инпут пустой, 
+
+в спане должна отображаться строка "Anonymous".*/
+
+const inputMessage = document.querySelector('#name-input'); 
+
+const outputMessage = document.querySelector('#name-output');
+
+
+inputMessage.addEventListener('input', (event) => {
+    outputMessage.textContent = event.currentTarget.value;
+    if ((outputMessage.textContent === '')) {
+        outputMessage.textContent = "Anonymous"
+    } 
+})
 
 

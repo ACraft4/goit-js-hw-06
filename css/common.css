@@ -24,9 +24,10 @@ button {
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+  color: tomato;
   list-style: none;
+  display: flex;
 }
+.item {
 
+}
